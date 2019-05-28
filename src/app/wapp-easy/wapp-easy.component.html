@@ -1,0 +1,33 @@
+
+<div class="container-fluid mt-5">
+<div class="row">
+  <div class="col-md-12">
+
+    
+    
+    <div class="card">
+      
+      <div>
+        <h4 class="text-center card-header text-light">VÄLJ PAKET</h4>
+      </div>
+      <div class="card-body">
+        
+        <form #myForm="ngForm" (ngSubmit)="onSubmit(myForm)" novalidate>
+          <div class="custom-control custom-radio mb-5">
+            <input id="B2C" class="mt-5 mb-1" type="radio" name="paket" value="B2C" ngModel required><span class="font-weight-bold"> Hemsida B2C ( 12.000 kr )</span><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi delectus, laboriosam aliquam possimus molestiae asperiores!</p>
+            <input id="B2B" class="mt-5 mb-1" type="radio" name="paket" value="B2B" ngModel required><span class="font-weight-bold"> Hemsida B2B ( 18.000 kr )</span><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis modi adipisci fugiat eos mollitia ullam nisi dolorum.</p>
+            <input id="Webbshop" class="mt-5 mb-1" type="radio" name="paket" value="Webbshop" ngModel required><span class="font-weight-bold">Webbshop ( 24.000 kr )</span><br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat iure eaque modi vel molestias laudantium.</p>
+          </div>
+          
+          <button routerLink="../" class="text-light mr-3">Tillbaka</button>
+          <button class="text-light" type="submit">Nästa</button>
+        </form>
+      </div>
+    </div>
+    
+  </div>
+</div>
+</div>

@@ -1,0 +1,47 @@
+<div class="container-fluid mt-5">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card">
+        <div>
+          <h4 class="text-center card-header text-light">LADDA UP MATERIAL</h4>
+        </div>
+        <div class="card-body">
+
+
+          <form action="upload.php" method="post" enctype="multipart/form-data">
+            <textarea name="" id="" cols="71" rows="5" placeholder="Texter till webbplatsen."></textarea>
+            <button type="submit" class="btn btn-primary">Ladda upp text</button>
+
+            <div class="row">
+
+              <div class="col-md-6">
+                <p class="text-right">Ladda upp bilder, texter, Logo mm.</p>
+
+              </div>
+              <div class="col-md-6">
+                
+
+                  <input type="file" id="file" name="file" placeholder="väljfiler" multiple="multiple"
+                  onchange="javascript:updateList()" />
+                  <br />Selected files:
+                  <div id="fileList"></div>
+                
+              </div>
+            </div>
+            <textarea name="" id="" cols="71" rows="5"
+              placeholder="ÖVRIG INFO, tex. Google Analytics, Färgkod, Instruktioner mm."></textarea>
+              <button type="submit" class="btn btn-primary">Ladda upp text</button><p></p>
+            <input type="checkbox" class="mt-5 mb-4" name="godkänn" value="godkänn" ngModel required><span
+              class="font-weight-light"> Jag är klar och kan slutföra köpet.</span>
+            <p></p>
+            <button routerLink="../" class="text-light bg-secondary mr-3">Tillbaka</button>
+            <button class="text-light bg-secondary" type="submit">Slutför</button>
+
+
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

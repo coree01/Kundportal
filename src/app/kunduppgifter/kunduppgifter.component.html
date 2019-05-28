@@ -1,0 +1,40 @@
+<div class="container-fluid mt-5">
+  <div class="row">
+    <div class="col-md-12">
+
+      <div class="card">
+
+        <h4 class="text-center card-header text-light mb-5">KUNDUPPGIFTER</h4>
+        <div class="card-body">
+
+          <form action="insert.php" method="POST" #myForm="ngForm" (ngSubmit)="onSubmit(myForm)" novalidate>
+
+            <input type="text" id="Namn" name="Namn" placeholder="NAMN">
+            <input type="text" id="fnamn" name="Företagsnamn" placeholder="FÖRETAG">
+
+            <input type="number" id="Orgnr" name="Organisationsnummer" placeholder="ORG NR.">
+
+            
+            
+            
+            
+            
+            <label class="text-dark mt-5" for="text"><span class="font-weight-bold">E-mail och Lösenord</span></label>
+            <input type="email" id="email" name="Email" placeholder="EMAIL" ngModel required>
+            <input type="password" id="Lösenord" name="Lösenord" placeholder="LÖSENORD" ngModel required>
+            <div *ngIf="myForm.invalid">
+              <label for="text" class="text-dark"><span class="font-weight-bold">Email och lösenord krävs.</span></label>
+            </div>
+
+            <input class="text-light" type="submit" value="Nästa">
+
+          </form>
+        </div>
+        <!--<a routerLink="WAPPEASY" type="submit" class="btn btn-primary">Nästa</a>-->
+
+
+      </div>
+
+    </div>
+  </div>
+</div>
